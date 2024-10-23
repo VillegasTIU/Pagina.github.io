@@ -10,34 +10,34 @@
     <div class="container">
         <div class="form-box">
             <h2>Registro</h2>
-            <form id="registroForm" action="Conexion.php" method="POST">
+            <form id="registroForm">
                 <div class="input-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" required>
                 </div>
                 <div class="input-group">
                     <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
+                    <input type="text" id="apellidos" required>
                 </div>
                 <div class="input-group">
                     <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    <input type="date" id="fecha-nacimiento" required>
                 </div>
                 <div class="input-group">
                     <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
+                    <input type="email" id="correo" required>
                 </div>
                 <div class="input-group">
                     <label for="usuario">Nombre de Usuario:</label>
-                    <input type="text" id="usuario" name="usuario" required>
+                    <input type="text" id="usuario" required>
                 </div>
                 <div class="input-group">
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" maxlength="10" required>
+                    <input type="tel" id="telefono" maxlength="10" required>
                 </div>
                 <div class="input-group">
                     <label for="municipio">Municipio:</label>
-                    <select id="municipio" name="municipio" required>
+                    <select id="municipio" required>
                         <option value="">Seleccione un municipio</option>
                         <option value="Aguascalientes">Aguascalientes</option>
                         <option value="Baja California">Baja California</option>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="input-group">
                     <label for="contrasena">Contraseña:</label>
-                    <input type="password" id="contrasena" name="contrasena" required onkeyup="validarContrasena()">
+                    <input type="password" id="contrasena" required onkeyup="validarContrasena()">
                 </div>
                 <div class="input-group">
                     <label for="confirmar-contrasena">Confirmar Contraseña:</label>
