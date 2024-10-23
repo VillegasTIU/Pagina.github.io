@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Registro</h2>
+            <form id="registroForm" action="Conexion.php" method="POST">
+                <div class="input-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="input-group">
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <div class="input-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="input-group">
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" maxlength="10" required>
+                </div>
+                <div class="input-group">
+                    <label for="municipio">Municipio:</label>
+                    <select id="municipio" name="municipio" required>
+                        <option value="">Seleccione un municipio</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Estado de México">Estado de México</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required onkeyup="validarContrasena()">
+                </div>
+                <div class="input-group">
+                    <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmar-contrasena" required onkeyup="validarContrasena()">
+                </div>
+                <div id="requisitos" style="margin-top: 5px;">
+                    <p>Requisitos para crear una contraseña segura:</p>
+                    <div id="requisitos-lista">
+                        <div>
+                            <span id="circulo1" class="circulo"></span>
+                            <span id="requisito1" class="requisito">• Al menos 8 caracteres</span><br>
+                        </div>
+                        <div>
+                            <span id="circulo2" class="circulo"></span>
+                            <span id="requisito2" class="requisito">• Debe tener mayúsculas y minúsculas</span><br>
+                        </div>
+                        <div>
+                            <span id="circulo3" class="circulo"></span>
+                            <span id="requisito3" class="requisito">• Debe tener números</span><br>
+                        </div>
+                        <div>
+                            <span id="circulo4" class="circulo"></span>
+                            <span id="requisito4" class="requisito">• Debe tener caracteres especiales</span><br>
+                        </div>
+                        <div>
+                            <span id="circulo5" class="circulo"></span>
+                            <span id="requisito5" class="requisito">• Las contraseñas coinciden</span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Registrar</button>
+                <p>¿Ya tienes una cuenta? <a href="index.html">Iniciar Sesión</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="validaciones.js"></script>
+</body>
+</html>
