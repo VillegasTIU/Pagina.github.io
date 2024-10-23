@@ -8,22 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="form-box"> <!-- Añadir aquí la clase form-box -->
+        
+        <form >
             <h2>Iniciar Sesión</h2>
-            <form action="Conexion.php" method="POST">
-                <div class="input-group">
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario" name="usuario" required>
-                </div>
-                <div class="input-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" id="contrasena" name="contrasena" required>
-                </div>
-                <button type="submit">Iniciar Sesión</button>
-                <input type="hidden" name="accion" value="iniciar_sesion">
-            </form>
-            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p> 
-        </div>
+            <div class="input-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+            <input type="hidden" name="accion" value="iniciar_sesion">
+            <p>¿No tienes una cuenta? <a href="registro.html">Registrate</a></p>
+        </form>
+       
     </div>
 </body>
 </html>
